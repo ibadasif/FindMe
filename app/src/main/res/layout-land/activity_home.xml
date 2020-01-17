@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Home">
+
+    <ViewFlipper
+        android:id="@+id/v_flipper"
+        android:layout_width="728dp"
+        android:layout_height="216dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="224dp"
+        android:layout_height="49dp"
+        android:fontFamily="@font/lobster"
+        android:text="@string/start_searching"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v_flipper" />
+
+
+    <ImageView
+        android:id="@+id/fstu"
+        android:layout_width="131dp"
+        android:layout_height="95dp"
+        android:src="@mipmap/ic_launcher_stu"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/frest"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="75dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/bigshot_one"
+        android:text="@string/school"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/fstu"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/frest"
+        android:layout_width="131dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="44dp"
+        android:src="@mipmap/ic_launcher_rest"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/bigshot_one"
+        android:text="@string/hospital"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="88dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/bigshot_one"
+        android:text="@string/resturant"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/fhosp"
+        android:layout_width="131dp"
+        android:layout_height="95dp"
+        android:src="@mipmap/ic_launcher_hosp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toEndOf="@+id/frest" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:background="@android:color/white">
+
+    <ViewFlipper
+        android:id="@+id/v_flipper"
+        android:layout_width="419dp"
+        android:layout_height="190dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="223dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/lobster"
+        android:text="@string/start_searching"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v_flipper" />
+
+    <ImageView
+        android:id="@+id/fstu"
+        android:layout_width="131dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="12dp"
+        android:src="@mipmap/ic_launcher_stu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="75dp"
+        android:layout_height="26dp"
+        android:fontFamily="@font/bigshot_one"
+        android:text="@string/school"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fstu" />
+
+
+    <ImageView
+        android:id="@+id/frest"
+        android:layout_width="131dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/ic_launcher_rest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/bigshot_one"
+        android:text="@string/hospital"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fhosp" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="88dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/bigshot_one"
+        android:text="@string/resturant"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frest" />
+
+    <ImageView
+        android:id="@+id/fhosp"
+        android:layout_width="131dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/ic_launcher_hosp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

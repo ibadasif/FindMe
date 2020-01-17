@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Find Me</string>
+    <string name="title_activity_hospitals">Map</string>
+    <string name="title_activity_resturants">Map</string>
+    <string name="title_activity_school">Map</string>
+    <string name="start_searching">Start Searching</string>
+    <string name="school">Schools</string>
+    <string name="resturant">Resturants</string>
+    <string name="hospital">Hospitals</string>
+</resources>
